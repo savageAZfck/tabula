@@ -1,9 +1,22 @@
 [package]
-name = "tabula"
+name = "tabula-rasa"
 version = "0.1.0"
 edition = "2021"
-description = "Proof of non-knowledge — certified absence of a datum over an append-only hash-chained history"
+rust-version = "1.75"
+authors = ["Adam Clark <savagetism@icloud.com>"]
+repository = "https://github.com/savageAZfck/tabula"
+homepage = "https://github.com/savageAZfck/tabula"
 license = "MIT"
+description = "Proof of non-knowledge: signed certificates that a datum never occurred in an append-only hash-chained history — committed scans replayable offline, false proofs refused at the API — the blank slate, proven"
+keywords = ["proof", "absence", "audit", "ledger", "agents"]
+categories = ["cryptography"]
+readme = "README.md"
+
+[lib]
+# The crates.io package is `tabula-rasa` (the bare `tabula` name is
+# taken); the library keeps the short name so `use tabula::…` stays
+# stable.
+name = "tabula"
 
 [dependencies]
 ed25519-dalek = { version = "2", features = ["rand_core"] }

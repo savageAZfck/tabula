@@ -413,7 +413,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "tabula"
+name = "tabula-rasa"
 version = "0.1.0"
 dependencies = [
  "ed25519-dalek",
